@@ -1,0 +1,81 @@
+html,body{
+    background-color: white;
+    height: 100%;
+    margin:10px;
+}
+.container{
+    height: 100%; 
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 2fr ;
+    grid-template-rows: 0.8fr 1fr 2fr 0.5fr;
+    text-align: justify;
+    font-size: 2em;
+    
+    
+    gap:20px;
+   grid-auto-columns: 100px;
+   justify-content: space-around;
+   
+    
+
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+
+.box1{
+    grid-area: 2;
+
+}
+.box2{
+grid-area: 2;
+}
+.box3{
+grid-area: 2;
+}
+.sidebar{
+   grid-row: 2/4;
+   grid-column: 4/5;
+    
+    
+}
+
+.content{
+    grid-column: 1/4;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.container > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.container > div:nth-child(1n){
+    background-color: rgb(129, 129, 218);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.container > div:nth-child(2n){
+    background-color:rgb(197, 142, 174);
+}
+.container > div:nth-child(3n){
+    background-color:rgb(137, 160, 101);
+}
+.container > div:nth-child(4n){
+    background-color:forestgreen;
+}
+.container > div:nth-child(5n){
+    background-color: rgb(43, 167, 216);
+}
+.container > div:nth-child(6n){
+    background-color:rgb(207, 136, 136);
+}
+.container > div:nth-child(7n){
+    background-color: rgb(235, 116, 219);
+}
